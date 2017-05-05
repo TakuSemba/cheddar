@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "com.takusemba.gouda.protos";
+option java_outer_classname = "Error";
+option go_package = "proto";
+
+package error;
+
+message ErrorResult {
+  string message = 1; /// Error message
+}
