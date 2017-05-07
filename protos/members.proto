@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+option java_package = "com.takusemba.gouda.protos";
+option java_outer_classname = "Members";
+option go_package = "proto";
+
+package Members;
+
+message Member {
+    int64 id                   = 1;
+    int64 age                  = 2;
+    string eyeColor            = 3;
+    string name                = 4;
+    string gender              = 5;
+    string company             = 6;
+    string email               = 7;
+    string phone               = 8;
+    string address             = 9;
+    string about               = 10;
+    string greeting            = 11;
+}
+
+message GetMembersResponse {
+    repeated Member members = 1;
+}
